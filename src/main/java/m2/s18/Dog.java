@@ -1,13 +1,12 @@
 package m2.s18;
 
-import java.util.Objects;
-
 public class Dog implements Comparable<Dog> {// implementa comparable, cosi posso avre il compareTo
 	private String name;
 	private String owner;
 
-	public Dog(String name, String owner) {// costruttore
-		this.name = name;// il nome dell oggetto che sto costruendo è lo stesso nome della proprietà
+	public Dog(String name, String owner) {// costruttore. This vuol dire che sto lavorando sul name dell'oggetto
+										   // corrente
+		this.name = name;// il nome dell oggetto che sto costruendo è lo stesso nome della proprietà.
 		this.owner = owner;
 	}
 
@@ -101,11 +100,12 @@ public class Dog implements Comparable<Dog> {// implementa comparable, cosi poss
 	}
 
 	@Override
-	public int compareTo(Dog that) {
-		int cmp = this.name.compareTo(that.name);
+	public int compareTo(Dog that) {// compara solo cani con cani
+		int cmp = this.name.compareTo(that.name);// compara nome corrente con quello dell altro cane. Se è 0, allora
+												 // compara i proprietari
 		if (cmp == 0) {
 			return this.owner.compareTo(that.owner);
 		}
-		return cmp;
+		return cmp;// superati i test cmp sarà 0
 	}
 }
