@@ -25,9 +25,9 @@ public class Relational {
         String a = "solution";
         String b = "sol";
         String c = "ution";
-        String d = b + c;
+        String d = b + c;//c'è solution ma l'id è diverso, è diverso da a
 
-        if (a == d) {
+        if (a == d) {//mi dirà che solution è doverso da solition
             System.out.println("You won't see this message");
         } else {
             System.out.println("'" + a + "' == '" + d + "' is not true");

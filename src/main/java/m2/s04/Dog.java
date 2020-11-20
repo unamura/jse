@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 public class Dog {
     private static final Logger LOG = Logger.getGlobal();
 
-    private String name;
+    private String name;//se mettessi static sarebbe come dire che il nome è relativo a tiutti i cani, alla classe
 
     // not a good parameter name, see "this"
     private Dog(String nm) {

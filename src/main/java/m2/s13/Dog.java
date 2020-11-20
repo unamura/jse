@@ -1,5 +1,8 @@
 package m2.s13;
 
+//qui implemento l'override di più cose.
+
+
 public class Dog implements WaggingBarker {
     private final int WAG_COUNT;
 
@@ -23,7 +26,7 @@ public class Dog implements WaggingBarker {
             sb.append(bark());
         }
 
-        return sb.toString();
+        return sb.toString();//metodo che permette di generare string che descriva l'oggetto
     }
 
     @Override
@@ -38,7 +41,7 @@ public class Dog implements WaggingBarker {
     }
 
     @Override
-    public String toString() {
+    public String toString() {//implemento in realtà la classe object. Questo tipicmante serve per essere messo nel log.
         return "Dog [WAG_COUNT=" + WAG_COUNT + "]";
     }
 }

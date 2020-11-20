@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Test;
 class S02DigitSumTest {
     @Test
     void digitSumPositive() {
-        int actual = S02.digitSum(123);
-        assertThat(actual, is(6));
+        int actual = S02.digitSum(100);
+        assertThat(actual, is(1));
     }
 
     @Test

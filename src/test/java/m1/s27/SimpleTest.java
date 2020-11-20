@@ -10,8 +10,8 @@ class SimpleTest {
     private Simple simple;
 
     @BeforeEach
-    public void init() {
-        simple = new Simple();
+    public void init() {//prima dei test chiama sempre questo metodo, before each
+        simple = new Simple();//creo oggetto simple, che uso dopo riga21
     }
 
     @Test
@@ -21,5 +21,14 @@ class SimpleTest {
         int result = simple.negate(value);
 
         assertThat(result, equalTo(-42));
+    }
+    
+    @Test
+    public void negateNegative() {//faccio un test anche su negativo
+        int value = -42;
+
+        int result = simple.negate(value);
+
+        assertThat(result, equalTo(42));
     }
 }

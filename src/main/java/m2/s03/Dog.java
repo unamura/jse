@@ -3,9 +3,11 @@ package m2.s03;
 import java.util.logging.Logger;
 
 public class Dog {
-    private static final Logger LOG = Logger.getGlobal();
+    private static final Logger LOG = Logger.getGlobal();//stampo log a console
 
     private String name;
+    //voglio aggiungere una proprietà per il padrone, ma ho gia un costruttore con stringa
+    //private String owner;
 
     public Dog() {
         name = "No name";
@@ -17,6 +19,11 @@ public class Dog {
         name = nm;
         LOG.info("A new dog named " + name + " has been created");
     }
+    
+//    public Dog(String ownerName) {
+//        name = nm;
+//        LOG.info("A new dog named " + name + " has been created");
+//    }
 
     public void bark() {
         System.out.println(name + ": woof");

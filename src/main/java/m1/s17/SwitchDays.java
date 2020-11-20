@@ -26,7 +26,7 @@ public class SwitchDays {
             break;
         }
 
-        if (today == WeekDay.FRIDAY) {
+        if (today == WeekDay.FRIDAY) {//uso == nonstatne non sia reference
             System.out.println(":-)");
         }
 

@@ -1,5 +1,6 @@
 package m2.s13.ex;
 
+// non ha niente a che vedere con i veicoli, ma miserve il condizionamento
 import java.util.logging.Logger;
 
 public class Flat implements Conditioning {

@@ -12,4 +12,18 @@ class S05IsPalindromeTest {
 
         assertThat(actual, is(true));
     }
+    
+    @Test
+    void isPalindromeSec() {
+        boolean actual = S05.isPalindrome("abcba");
+
+        assertThat(actual, is(true));
+    }
+    
+    @Test
+    void isPalindromeFail() {
+        boolean actual = S05.isPalindrome("sdjjcn");
+
+        assertThat(actual, is(false));
+    }
 }

@@ -41,7 +41,7 @@ public class AboutString {
 
         String[] splits = "one for me, one for you".split(" ");
         System.out.println("Splitting: ");
-        for (String token : splits) {
+        for (String token : splits) {// for each, token, inteso come elemento, pezzo di stringa con significato ben determinato
             System.out.println(token);
         }
         String joined = String.join(" ", splits);

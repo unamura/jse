@@ -21,7 +21,8 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Invoco i metodi
+    	//Partendo dal più leggero (diciamo), ai + pesanti
         System.out.println("main");
         LOG.finest("finest message");
         LOG.finer("finer message");
@@ -42,8 +43,10 @@ public class Main {
             int x = 7 / 0;
             System.out.println("x = " + x);
         } catch (Exception ex) {
-            LOG.log(Level.SEVERE, "Can't divide an integer by zero", ex);
-        }
+            LOG.log(Level.SEVERE, "Can't divide an integer by zero", ex);//uso metodo + specifico, non LOG
+            //LOG.severe(), ma è limitato prende solo un parametro
+            //nel LOG.log    ho molti metodi
+            }
 
     }
 }

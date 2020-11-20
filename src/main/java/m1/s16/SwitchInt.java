@@ -6,7 +6,7 @@ public class SwitchInt {
 
         // ...
 
-        switch (value) {
+        switch (value) {//faccio check sul risultato
         case 1:
         case 3:
         case 5:

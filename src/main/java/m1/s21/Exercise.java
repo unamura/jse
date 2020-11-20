@@ -51,7 +51,7 @@ public class Exercise {
      * @param shift the encryption gap
      * @return the encrypted version of the input string
      */
-    public static String encryptCaesar(String s, int shift) {
+    public static String encryptCaesar(String s, int shift) {//posso passare shift negativo
         if (s == null || s.isEmpty()) {
             return s;
         }
@@ -62,8 +62,8 @@ public class Exercise {
             char current = s.charAt(i);
             if (current >= 'A' && current <= 'Z') {
                 int delta = (current - 'A' + shift) % ALPHABET_SIZE;
-                if (delta < 0) {
-                    delta += ALPHABET_SIZE;
+                if (delta < 0) {//faccio test
+                    delta += ALPHABET_SIZE;//il delta negativo è da aggiustare, riportarlo nell'ALPHABET SIZE
                 }
                 result.append((char) ('A' + delta));
             }
@@ -83,7 +83,7 @@ public class Exercise {
      * @param s an uppercase-only string (?!)
      * @return the encrypted version of the input string
      */
-    public static String encryptCaesar1(String s) {
+    public static String encryptCaesar1(String s) {//switch di 1 solo char
         if (s == null || s.isEmpty()) {
             return s;
         }

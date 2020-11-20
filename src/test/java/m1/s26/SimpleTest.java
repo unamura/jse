@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class SimpleTest {
     @Test
-    public void negatePositive() {
+    public void negatePositive() {//passo valore positivo e mi aspetto lo neghi
         Simple simple = new Simple();
         int value = 42;
         int expected = -42;

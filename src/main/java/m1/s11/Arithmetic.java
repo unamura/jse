@@ -24,7 +24,7 @@ public class Arithmetic {
 
         int alpha = 2;
 
-        alpha += 8; // 10
+        alpha += 8; // 10 // alpha = alpha + 8
         System.out.println(alpha);
 
         alpha -= 3; // 7

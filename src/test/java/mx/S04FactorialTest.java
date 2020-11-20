@@ -19,4 +19,11 @@ class S04FactorialTest {
 
         assertThat(actual, is(0L));
     }
+    
+    @Test
+    void factorialOne() {
+        long actual = S04.factorial(0);
+
+        assertThat(actual, is(1L));
+    }
 }

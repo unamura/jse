@@ -16,3 +16,4 @@ class SimpleTest2 {
         assertEquals(expected, actual);        
     }
 }
+//nel codice della classe c'è il return 0, ma mi aspettavo il negativo

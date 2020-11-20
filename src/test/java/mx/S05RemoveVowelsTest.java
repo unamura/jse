@@ -12,4 +12,11 @@ class S05RemoveVowelsTest {
 
         assertThat(actual, is("xmpl"));
     }
+    
+    @Test
+    void removeVowelsSec() {
+        String actual = S05.removeVowels("doremi");
+
+        assertThat(actual, is("drm"));
+    }
 }

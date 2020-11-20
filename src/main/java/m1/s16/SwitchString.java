@@ -12,10 +12,10 @@ public class SwitchString {
             break;
         case "2":
             System.out.println("value is two?");
-            // !!! fall through !!!
+            // !!! fall through !!!//Non c'è perche magari se c'è 2 voglio che faccia la domanda
             // !!! no break needed here !!!
         case "3":
-            System.out.println("value is three?");
+            System.out.println("value is three?");//se c'è 3 li stampa tutti.
             break;
         default:
             System.out.println("value is neither one nor two");

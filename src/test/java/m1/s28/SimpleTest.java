@@ -15,23 +15,30 @@ import org.junit.jupiter.api.Test;
 class SimpleTest {
     @Test
     public void checkTrue() {
-        boolean condition = true;
+        boolean condition = true;//per farl0 fallire basta inserire false
         assertTrue(condition);
     }
 
     @Test
     public void checkNull() {
         String reference = null;
-        assertNull(reference);
+        assertNull(reference);//ha successo, poichè null
     }
 
     @Test
-    public void checkEquals() {
+    public void checkEquals() {//NON fallisce se sono uguali
         int expected = 42;
         int actual = 42;
         assertEquals(expected, actual);
     }
 
+//    @Test
+//    public void checkEqualsDoubleNegative() {
+//        double expected = .87;//se lavoro con floating point, dobbiamo gestire noi l'epsilon
+//        double actual = .29 * 3;// si avranno discrepanze
+//        assertEquals(expected, actual);//se dico che deve essere preciso, fallirà
+//    }
+    
     @Test
     public void checkEqualsDouble() {
         double expected = .87;
@@ -58,9 +65,10 @@ class SimpleTest {
     }
 
     @Test
-    public void hamNull() {
+    public void hamNull() {//voglio asserore che reference sia null
         String reference = null;
-        assertThat(reference, is((String) null));
+        assertThat(reference, is((String) null));//devo mettere reference a stringa, devo fare cast
+        //vuole che riferisca nulla ad una stringa, si pref nullValue
     }
 
     @Test
@@ -93,7 +101,8 @@ class SimpleTest {
     public void hamEqualsDouble() {
         double expected = .87;
         double actual = .29 * 3;
-        assertThat(actual, closeTo(expected, .0001));
+        assertThat(actual, closeTo(expected, .0001));//leggibile, usando closeTo
+        // asserisco che valore trovato sia vicino all'atteso con questo epsilon
     }
 
     @Test

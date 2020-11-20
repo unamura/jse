@@ -11,7 +11,7 @@ public class Widening {
 
         System.out.println(d);
 
-        char c = (char) s;
+        char c = (char) s; //devo fare cast esplicito, senno da errore
         int i2 = c;
         System.out.println(c + " " + i2);
         
@@ -21,8 +21,8 @@ public class Widening {
         System.out.println(x + ", " + x2);
         
         long bigValueL = 1_000_000_000_000_000_000L;
-        float bigValueF = bigValueL;
-        double bigValueD = bigValueL;
+        float bigValueF = bigValueL;//prova a convertire ma non troppo bene
+        double bigValueD = bigValueL;// esegue correttamente la conversione
         System.out.println(bigValueL + ", " + bigValueF + ", " + bigValueD);
         System.out.println(String.format("%.0f, %.0f", bigValueF, bigValueD));
     }

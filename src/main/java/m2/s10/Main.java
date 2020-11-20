@@ -6,6 +6,6 @@ public class Main {
 
         System.out.println("h() -> " + access.h());
         System.out.println("c -> " + Access.c);
-        System.out.println("b -> " + access.b);
+        System.out.println("b -> " + access.b);//riesco ad accedere a b, ciò è folle!
     }
 }

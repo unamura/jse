@@ -11,6 +11,6 @@ public class DoWhile {
             if (something) {
                 condition = false;
             }
-        } while (condition);
+        } while (condition);// sottointeso condition == true
     }
 }

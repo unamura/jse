@@ -4,14 +4,21 @@ public class Forever {
     public static void main(String[] args) {
         boolean something = false;
 
-        for (;;) {
+        for (;;) {//potrei anche scrivere for (true), while(true)
             System.out.println("something is " + something);
 
             if (something) {
-                break;
+                break;//rompe esecuz del for più vicino
             }
 
             something = true;
         }
     }
 }
+/* Se faccio   while (true) {
+*                    for (;;) {
+*                        }
+*                    }
+* Il break rompe solo il for e non il while che fara fare il for all infinito
+*  Attenzione
+*/

@@ -12,8 +12,10 @@ public class Concatenation {
         System.out.println("Vogons".repeat(3)); // Java 11
 
         String s = "Hello";
-        s += 3;
+        String t = s;
+        s += 3;//non sarà modificata la str s, viene creata una reference e poi è aggiunto 3
         // s = s + 3;
         System.out.println(s);
+        System.out.println(t);
     }
 }
